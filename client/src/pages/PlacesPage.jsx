@@ -74,9 +74,9 @@ export default function PlacesPage() {
                 <div>
                     <form>
                         {preInput('Title','Title for your place.')}
-                        <input type="text" value={title} onChange={ev => setTitle(ev.target.value)} placeholder="for example my lovely home" input/>
+                        <input type="text" value={title} onChange={ev => setTitle(ev.target.value)} placeholder="for example my lovely home" />
                         {preInput('Address','Address to this place.')}
-                        <input type="text" value={address} onChange={ev => setAddress(ev.target.value)} placeholder="address" input/>
+                        <input type="text" value={address} onChange={ev => setAddress(ev.target.value)} placeholder="address" />
                         {preInput('Photos','more=better.')}
                         <div className="flex gap-2">
                             <input value={photoLink} 
@@ -87,7 +87,7 @@ export default function PlacesPage() {
                         <div className="mt-2 grid gap-2 grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
                             {addedPhotos.length > 0 && addedPhotos.map(link => (
                                 <div className="h-32 flex">
-                                    <img className="rounded-2xl w-full object-cover" src={'http://localhost:4000/uploads'+link}></img>
+                                    <img className="rounded-2xl w-full object-cover" src={'http://localhost:4000/uploads/'+link}></img>
                                 </div>
                             ))}
                             <label className="h-32 cursor-pointer flex gap-1 items-center justify-center border bg-transparent rounded-2xl p-2 text-2xl text-gray-600">
