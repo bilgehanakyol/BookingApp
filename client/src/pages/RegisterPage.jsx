@@ -16,7 +16,7 @@ export default function RegisterPage() {
             });
             alert('Registeratiomn is succesful. Now you can log in');
          } catch(e) {
-            alert('registration is failed please try again');
+            alert('Registration is failed please try again');
          }
         
     };

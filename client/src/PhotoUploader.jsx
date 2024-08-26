@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 
 export default function PhotoUploader({addedPhotos, onChange}) {
     const [photoLink, setPhotoLink] = useState('');
